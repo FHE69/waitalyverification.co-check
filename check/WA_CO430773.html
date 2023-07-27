@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Well Accommodation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+h1 {
+text-align: center;
+}
+.container {
+margin: 0 auto;
+max-width: 800px;
+padding: 20px;
+box-sizing: border-box;
+}
+table {
+border-collapse: collapse;
+width: 100%;
+margin-bottom: 20px;
+}
+th,
+td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+th {
+font-weight: bold;
+}
+.print-button {
+margin: 20px auto;
+display: block;
+text-align: center;
+}
+.qr-code {
+text-align: center;
+margin-top: 20px;
+}
+.privacy-policy {
+margin-top: 20px;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+<h1>Booking Confirmation</h1>
+<div class="container">
+<table>
+<tr>
+<th>Name:</th>
+<td><strong>Md Shayadin Akanda
+</strong></td>
+</tr>
+<tr>
+<th>Booking Reference Number:</th>
+<td><strong>WA_CO430773
+</strong></td>
+</tr>
+<tr>
+<th>Institution:</th>
+<td><strong>Università degli Studi di MESSINA</strong></td>
+</tr>
+<tr>
+<th>Date of Birth:</th>
+<td><strong>13 01 1999</strong></td>
+</tr>
+<tr>
+<th>Passport Number:</th>
+<td><strong>A02154217</strong></td>
+</tr>
+</table>
+</div>
+<div class="qr-code">
+<div id="qr"></div>
+</div>
+<div class="print-button">
+<button onDISABLEDclick="window.print()">Print this page</button>
+</div>
+<div class="privacy-policy">
+<p>We take the privacy and security of our users' personal information seriously. We will only use this
+information for the purpose of providing accommodation services and will not share it with any third parties
+without their consent.</p>
+<br>
+<p>Verification is an essential part of any online service that deals with sensitive user information, such as
+personal or financial data. It is the process of confirming the accuracy and authenticity of user-provided
+information, such as their identity, contact information, and payment details. Verification helps to prevent
+fraud, protect users from identity theft, and ensure that the service provider is compliant with relevant laws
+and regulations. By implementing a verification process, Well Accommodation can help to prevent
+fraudulent activity and protect its users' personal and financial data. It also ensures that only legitimate
+users can access the services provided by the company. This can help to build trust with users and
+improve the overall user experience, as users are more likely to feel safe and secure when using the
+service. Furthermore, implementing a verification process can also help the company to comply with
+relevant laws and regulations related to data privacy and security. Failure to comply with these laws can
+result in legal and financial penalties, as well as damage to the company's reputation. Overall, verification
+is an essential part of any online service that deals with sensitive user information. By implementing this
+feature, Well Accommodation can help to prevent fraud, protect user data, and build trust with its users,
+ultimately leading to a better user experience and a more successful business.</p>
+</div>
+<script>
+var qr = new QRious({
+element: document.getElementById('qr'),
+value: window.location.href
+});
+</script>
+</body>
+</html>
